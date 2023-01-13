@@ -1,1 +1,143 @@
-# platzi-ruta-javascript-para-desarrollo-web
+# Cursos Platzi
+# Ruta: Frontend y Backend con Javascript para Desarrollo Web
+
+- [ ] Curso de Computación Básica
+- [ ] Curso de Pensamiento Lógico: Algoritmos y Diagramas de Flujo
+- [ ] Curso de Pensamiento Lógico: Manejo de Datos, Estructuras y Funciones
+- [ ] Curso de Pensamiento Lógico: Lenguajes de Programación
+- [ ] Nuevo Curso Gratis de Programación Básica
+- [ ] Curso de Introducción a la Web: Historia y Funcionamiento de Internet
+- [ ] Fundamentos de Ingeniería de Software
+- [ ] Curso de Prework: Configuración de Entorno de Desarrollo en Windows
+- [ ] Curso de Prework: Configuración de Entorno de Desarrollo en Linux
+- [ ] Curso de Prework: Configuración de Entorno de Desarrollo en macOS
+- [ ] Curso de Introducción a la Terminal y Línea de Comandos
+- [ ] Curso Profesional de Git y GitHub
+- [ ] Curso de Flujo de Desarrollo Moderno CodeStream
+- [ ] Curso de Frontend Developer
+- [ ] Curso Práctico de Frontend Developer
+- [ ] Curso Definitivo de HTML y CSS
+- [ ] Curso Práctico de HTML y CSS
+- [ ] Curso de Responsive Design: Maquetación Mobile First
+- [ ] Curso de Diseño para Developers
+- [ ] Curso de Sistemas de Diseño
+- [ ] Curso de CSS Grid Básico
+- [ ] Curso Práctico de Maquetación en CSS
+- [ ] Curso Profesional de CSS Grid Layout
+- [ ] Curso de Diseño Web con CSS Grid y Flexbox
+- [ ] Curso de Transformaciones y Transiciones en CSS
+- [ ] Curso de Animaciones con CSS
+- [ ] Curso Básico de JavaScript
+- [ ] Curso Práctico de JavaScript
+- [ ] Taller Práctico de JavaScript: Matemáticas y Estadística Básica
+- [ ] Taller Práctico de JavaScript: ¡Crea tu Primer Videojuego!
+- [ ] Curso de Closures y Scope en JavaScript
+- [ ] Curso de Programación Orientada a Objetos: POO
+- [ ] Curso Básico de Programación Orientada a Objetos con JavaScript
+- [ ] Curso Intermedio de Programación Orientada a Objetos en JavaScript
+- [ ] Curso de ECMAScript: Historia y Versiones de JavaScript
+- [ ] Curso de Manipulación de Arrays en JavaScript
+- [ ] Curso de JavaScript Engine (V8) y el Navegador
+- [ ] Curso de Asincronismo con JavaScript
+- [ ] Curso de Consumo de API REST con JavaScript
+- [ ] Curso Práctico de Consumo de API REST con JavaScript
+- [ ] Curso Profesional de Consumo de API REST con JavaScript
+- [ ] Curso de NPM: Gestión de Paquetes y Dependencias en JavaScript
+- [ ] Curso Profesional de JavaScript
+- [ ] Curso de Fundamentos de TypeScript
+- [ ] Curso de TypeScript: Tipos Avanzados y Funciones
+- [ ] Curso de TypeScript: Programación Orientada a Objetos y Asincronismo
+- [ ] Curso de Introducción a Empaquetadores Web
+- [ ] Curso de Webpack
+- [ ] Curso de Vite.js
+- [ ] Curso de Single Page Application con JavaScript Vanilla
+- [ ] Curso Práctico de Maquetación y Animaciones con CSS
+- [ ] Curso de Debugging con Chrome DevTools
+- [ ] Curso de Manipulación del DOM
+- [ ] Curso de Optimización Web
+- [ ] Audiocurso de Accesibilidad Web: Casos de Estudio
+- [ ] Curso de Accesibilidad Web
+- [ ] Curso Básico de Web Components con JavaScript
+- [ ] Curso de Estructuras de Datos con JavaScript
+- [ ] Curso de Complejidad Algorítmica con JavaScript
+- [ ] Curso de Fundamentos de Pruebas de Software
+- [ ] Curso de Introducción al Testing con JavaScript
+- [ ] Curso de Introducción a la Automatización de Pruebas
+- [ ] Curso de Automatización de Pruebas UI con Cypress
+- [ ] Curso de Automatización de Pruebas con Puppeteer
+- [ ] Curso Avanzado de Automatización de Pruebas con Puppeteer
+- [ ] Curso de Frameworks y Librerías de JavaScript
+- [ ] Curso de Introducción a React.js
+- [ ] Curso de React.js: Patrones de Render y Composición
+- [ ] Curso de React.js: Manejo Profesional del Estado
+- [ ] Curso de React.js: Navegación con React Router
+- [ ] Curso Práctico de React.js
+- [ ] Curso Profesional de React Hooks
+- [ ] Curso Profesional de React.js y Redux
+- [ ] Curso de State Machines en React.js
+- [ ] Curso de Unit Testing con Jest en React
+- [ ] Curso de Introducción a Librerías UI con React
+- [ ] Curso Básico de Material UI con React
+- [ ] Curso de Creación de Librerías UI para React
+- [ ] Curso de React Avanzado
+- [ ] Curso de Fundamentos de Angular
+- [ ] Curso de Angular: Componentes y Servicios
+- [ ] Curso de Consumo de APIs REST con Angular
+- [ ] Curso de Angular Router: Lazy Loading y Programación Modular
+- [ ] Curso de Angular: Unit Testing para Servicios
+- [ ] Curso de Angular: Unit Testing para Componentes
+- [ ] Curso de Angular: Unit Testing para Formularios
+- [ ] Curso de Angular: Unit Testing para Rutas
+- [ ] Curso de Rendimiento en Angular
+- [ ] Curso de Angular Forms: Creación y Optimización de Formularios Web
+- [ ] Curso de Progressive Web Apps con Angular 8
+- [ ] Curso de Vue.js: Introducción y Fundamentos
+- [ ] Curso de Vue.js: Componentes y Composition API
+- [ ] Curso Práctico de Vue.js
+- [ ] Curso de Vue.js: Navegación con Vue Router
+- [ ] Curso de Vue.js: Manejo del Estado con Vuex
+- [ ] Curso de Vue.js: Manejo del Estado con Pinia
+- [ ] Curso de Reactividad con Vue.js 3
+- [ ] Curso de Unit Testing en Vue.js 3
+- [ ] Curso Profesional de Vue.js 2
+- [ ] Curso Avanzado de Vue.js 2
+- [ ] Curso Avanzado de Vue.js 2 y Firebase por Bedu
+- [ ] Curso de Svelte
+- [ ] Curso de Introducción a Jamstack
+- [ ] Curso Básico de GitHub Actions
+- [ ] Curso para Conseguir Trabajo como Frontend Developer
+- [ ] Curso para Conseguir Trabajo en Tecnología
+- [ ] Curso de Fundamentos de Bases de Datos
+- [ ] Curso de PostgreSQL
+- [ ] Curso Práctico de SQL
+- [ ] Curso Básico de MongoDB
+- [ ] Curso de Fundamentos de Node.js
+- [ ] Curso de Backend con Node.js: API REST con Express.js
+- [ ] Curso de Backend con Node.js: Base de Datos con PostgreSQL
+- [ ] Curso de Backend con Node.js: Autenticación con Passport.js y JWT
+- [ ] Curso de Node.js: Base de Datos con MongoDB y WebSockets
+- [ ] Curso de Node.js: Autenticación, Microservicios y Redis
+- [ ] Curso de Aplicaciones en Tiempo Real con Socket.io
+- [ ] Curso Práctico de Webpack
+- [ ] Curso de Node.js para IoT: Pub/Sub con MQTT, Testing y WebSockets
+- [ ] Curso Práctico de GraphQL con JavaScript
+- [ ] Curso Avanzado de Node.js con GraphQL, Apollo Server y Prisma
+- [ ] Curso de Automatización de Pruebas de Backend con Cypress
+- [ ] Fundamentos de Arquitectura de Software
+- [ ] Curso Profesional de Arquitectura de Software
+- [ ] Curso de Backend con NestJS
+- [ ] Curso de NestJS: Programación Modular, Documentación con Swagger y Deploy
+- [ ] Curso de NestJS: Persistencia de Datos con MongoDB
+- [ ] Curso de NestJS: Persistencia de Datos con TypeORM
+- [ ] Curso de NestJS: Autenticación con Passport y JWT
+- [ ] Curso de Next.js
+- [ ] Curso Práctico de Next.js
+- [ ] Curso Profesional de Next.js
+- [ ] Curso de Next.js con GraphQL
+- [ ] Curso de Next.js: Sitios Estáticos y Jamstack
+- [ ] Curso de Next.js: Optimización y Deploy a Producción
+- [ ] Curso de Next.js: Internacionalización de Aplicaciones Web con i18n
+- [ ] Curso de Next.js: Optimización y Manejo de Grandes Datasets
+- [ ] Curso de Next.js: Autenticación
+- [ ] Curso de Next.js: Seguridad Web con OWASP
+- [ ] Curso de Desarrollo de Aplicaciones Web con Gatsby JS
