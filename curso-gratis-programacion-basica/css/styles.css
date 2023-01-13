@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Rubik+Bubbles&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#titulo {
+    font-size: 80px;
+    font-family: 'Rubik Bubbles', cursive;
+    color: #29b6f6;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-mokepon, .info-mascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    box-sizing: border-box;
+    border-color: black;
+}
+
+.tarjeta-mokepon img {
+    width: 250px;
+    height: 250px;
+}
+
+#boton-mascota {
+    height: 40px;
+    width: 180px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid black;
+    font-family: 'Rubik Bubbles', cursive;
+}
+
+input:checked{
+    width: 100px;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.botones {
+    height: 40px;
+    width: 180px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid black;
+    font-family: 'Rubik Bubbles', cursive;
+}
+
+#mensajes {
+    width: 450px;
+    border-color: #73e8ff;
+    border-style: dotted;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mensaje-resultado {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info-combate {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    width: 350px;
+    margin-top: 20px;
+    column-gap: 50px;
+}
+
+@media(max-width: 360px) {
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    #titulo {
+        font-size: 30px;
+    }
+
+    .tarjeta-mokepon img {
+        width: 150px;
+        height: 150px;
+    }
+}
