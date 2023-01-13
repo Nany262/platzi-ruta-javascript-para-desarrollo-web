@@ -1,5 +1,5 @@
 # Cursos Platzi
-# Ruta: Frontend y Backend con Javascript para Desarrollo Web
+## Ruta: Frontend y Backend con Javascript para Desarrollo Web
 
 - [x] Curso de Computación Básica
 - [x] Curso de Pensamiento Lógico: Algoritmos y Diagramas de Flujo
