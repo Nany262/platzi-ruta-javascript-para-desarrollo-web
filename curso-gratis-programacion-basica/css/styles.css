@@ -46,8 +46,14 @@ body {
     font-family: 'Rubik Bubbles', cursive;
 }
 
-input:checked{
-    width: 100px;
+input {
+    display: none;
+}
+
+input:checked + label{
+    border-color: #29b6f6;;
+    border-style: dotted;
+    border-radius: 20px;
 }
 
 #seleccionar-ataque {
