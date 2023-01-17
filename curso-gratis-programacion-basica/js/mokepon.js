@@ -3,10 +3,11 @@ let mascotaEnemiga = 0
 let mascotaJugador = 0
 let ataqueJugador = ''
 let ataqueEnemigo = ''
-let botonFuego
-let botonAgua
-let botonTierra
-let botonReiniciar
+let botonFuego = document.getElementById('boton-fuego')
+let botonAgua = document.getElementById('boton-agua')
+let botonTierra = document.getElementById('boton-tierra')
+let botonReiniciar = document.getElementById('boton-reiniciar')
+let seccionAtaque = document.getElementById('seleccionar-ataque')
 let vidasEnemigo = 3
 let vidasJugador = 3
 let resultado
@@ -17,7 +18,6 @@ function seleccionarMascotaJugador() {
     let inputCapipepo = document.getElementById('capipepo') // id=2
     let inputRatigueya = document.getElementById('ratigueya') // id=3
     let spanMascotaJugador = document.getElementById('mascota-jugador')
-    let seccionAtaque = document.getElementById('seleccionar-ataque')
     let seccionMascota = document.getElementById('seleccionar-mascota')
 
     seccionMascota.style.display = 'none'
@@ -146,11 +146,6 @@ function reiniciarJuego() {
 
 function iniciarJuego() {
     let botonMascotaJugador = document.getElementById('boton-mascota')
-    botonReiniciar = document.getElementById('boton-reiniciar')
-    let seccionAtaque = document.getElementById('seleccionar-ataque')
-    botonFuego = document.getElementById('boton-fuego')
-    botonAgua = document.getElementById('boton-agua')
-    botonTierra = document.getElementById('boton-tierra')
 
     seccionAtaque.style.display = 'none'
     botonReiniciar.hidden = true
