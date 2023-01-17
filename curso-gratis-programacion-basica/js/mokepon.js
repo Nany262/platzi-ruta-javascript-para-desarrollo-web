@@ -3,11 +3,11 @@ let mascotaEnemiga = 0
 let mascotaJugador = 0
 let ataqueJugador = ''
 let ataqueEnemigo = ''
-let botonFuego = document.getElementById('boton-fuego')
-let botonAgua = document.getElementById('boton-agua')
-let botonTierra = document.getElementById('boton-tierra')
-let botonReiniciar = document.getElementById('boton-reiniciar')
-let seccionAtaque = document.getElementById('seleccionar-ataque')
+const botonFuego = document.getElementById('boton-fuego')
+const botonAgua = document.getElementById('boton-agua')
+const botonTierra = document.getElementById('boton-tierra')
+const botonReiniciar = document.getElementById('boton-reiniciar')
+const seccionAtaque = document.getElementById('seleccionar-ataque')
 let vidasEnemigo = 3
 let vidasJugador = 3
 let resultado
