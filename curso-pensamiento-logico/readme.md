@@ -5,6 +5,7 @@
 Sistema numérico representado por 0-1
 
 - Para convertir de decimal a binario se divide por 2 y se toma el residuo.
+
 $$
 28 \to 11100 \left\{
 \begin{array}{ll}
@@ -38,6 +39,8 @@ $$
 
 Las operaciones se realizan en base a las siguientes reglas:
 
+- Suma:
+
 $$
 Suma \left\{
 \begin{array}{ll}
@@ -49,6 +52,8 @@ Suma \left\{
 \right.
 $$
 
+- Resta
+
 $$
 Resta \left\{
 \begin{array}{ll}
@@ -59,6 +64,8 @@ Resta \left\{
 \end{array}
 \right.
 $$
+
+- Multiplicación
 
 $$
 Multiplicacion \left\{
