@@ -28,6 +28,9 @@ class Mokepon {
 let hipodoge = new Mokepon('hipodoge', './assets/mokepons_mokepon_hipodoge_attack.webp', 3);
 let capipepo = new Mokepon('capipepo', './assets/mokepons_mokepon_capipepo_attack.webp', 3);
 let ratigueya = new Mokepon('ratigueya', './assets/mokepons_mokepon_ratigueya_attack.webp', 3);
+let langostelvis = new Mokepon('langostelvis', './assets/mokepons_mokepon_langostelvis_attack.png', 3);
+let pydos = new Mokepon('pydos', './assets/mokepons_mokepon_pydos_attack.png', 3);
+let tucapalma = new Mokepon('tucapalma', './assets/mokepons_mokepon_tucapalma_attack.png', 3);
 
 hipodoge.ataques.push(
   //objetos literarios
@@ -54,29 +57,56 @@ ratigueya.ataques.push(
   { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra' },
 );
 
-mokepones.push(hipodoge, capipepo, ratigueya);
+langostelvis.ataques.push(
+  //objetos literarios
+  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-1' },
+  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-2' },
+  { nombre: 'FUEGO', emoji: '🔥', idBoton: 'boton-fuego-1' },
+  { nombre: 'FUEGO', emoji: '🔥', idBoton: 'boton-fuego-2' },
+  { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra' },
+);
+
+pydos.ataques.push(
+  //objetos literarios
+  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-1' },
+  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-2' },
+  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-3' },
+  { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra-1' },
+  { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra-2' },
+);
+
+tucapalma.ataques.push(
+  //objetos literarios
+  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-1' },
+  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-2' },
+  { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra-1' },
+  { nombre: 'FUEGO', emoji: '🔥', idBoton: 'boton-fuego' },
+  { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra-1' },
+);
+
+mokepones.push(hipodoge, capipepo, ratigueya, tucapalma, pydos, langostelvis);
 
 function seleccionarMascotaJugador() {
-  let inputHipodoge = document.getElementById('hipodoge'); // id=1
-  let inputCapipepo = document.getElementById('capipepo'); // id=2
-  let inputRatigueya = document.getElementById('ratigueya'); // id=3
+  let botonesMokepones = [];
+  let mokeponSeleccionado = false;
   let spanMascotaJugador = document.getElementById('mascota-jugador');
   let seccionMascota = document.getElementById('seleccionar-mascota');
 
   seccionMascota.style.display = 'none';
-  if (inputHipodoge.checked) {
-    spanMascotaJugador.innerHTML = inputHipodoge.id[0].toUpperCase() + inputHipodoge.id.substring(1);
-    mascotaJugador = inputHipodoge.id;
-    seccionAtaque.style.display = 'flex';
-  } else if (inputCapipepo.checked) {
-    spanMascotaJugador.innerHTML = inputCapipepo.id[0].toUpperCase() + inputCapipepo.id.substring(1);
-    mascotaJugador = inputCapipepo.id;
-    seccionAtaque.style.display = 'flex';
-  } else if (inputRatigueya.checked) {
-    spanMascotaJugador.innerHTML = inputRatigueya.id[0].toUpperCase() + inputRatigueya.id.substring(1);
-    mascotaJugador = inputRatigueya.id;
-    seccionAtaque.style.display = 'flex';
-  } else {
+  mokepones.forEach((mokepon) => {
+    botonesMokepones.push(document.getElementById(mokepon.nombre))
+  })
+
+  botonesMokepones.forEach((boton) => {
+    if (boton.checked) {
+      spanMascotaJugador.innerHTML = boton.id[0].toUpperCase() + boton.id.substring(1);
+      mascotaJugador = boton.id;
+      seccionAtaque.style.display = 'flex';
+      mokeponSeleccionado = true;
+    }
+  })
+
+  if (!mokeponSeleccionado) {
     alert('No seleccionaste ninguna mascota');
     reiniciarJuego();
   }
@@ -123,7 +153,7 @@ function secuenciaAtaques() {
       }
     })
   })
-  
+
 }
 
 function seleccionarMascotaEnemigo() {
@@ -138,7 +168,7 @@ function seleccionarAtaqueEnemigo() {
   let pos = aleatorio(0, opcionesAtaqueEnemigo.length - 1)
   ataqueEnemigo = opcionesAtaqueEnemigo[pos].nombre
   ataquesEnemigoRealizados.push(ataqueEnemigo);
-  opcionesAtaqueEnemigo.splice(pos,1)
+  opcionesAtaqueEnemigo.splice(pos, 1)
   console.log("ataques enemigo", opcionesAtaqueEnemigo)
 
 }
