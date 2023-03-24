@@ -7,11 +7,14 @@ let ataquesEnemigoRealizados = [];
 const botonReiniciar = document.getElementById('boton-reiniciar');
 const seccionAtaque = document.getElementById('seleccionar-ataque');
 const contenedorTarjetas = document.getElementById('contenedor-tarjetas');
+const seccionVerMapa = document.getElementById('ver-mapa')
+const mapa = document.getElementById('mapa')
 let vidasEnemigo = 3;
 let vidasJugador = 3;
 let resultado;
 let opcionMokepones;
 let opcionesAtaqueEnemigo;
+let lienzo = mapa.getContext("2d")
 
 let mokepones = [];
 
@@ -21,6 +24,12 @@ class Mokepon {
     this.imagen = imagen;
     this.vida = vida;
     this.ataques = [];
+    this.x = 20;
+    this.y = 30;
+    this.ancho = 80;
+    this.alto = 80;
+    this.imagenMokepon = new Image()
+    this.imagenMokepon.src = imagen
   }
 }
 
@@ -92,6 +101,8 @@ function seleccionarMascotaJugador() {
   let spanMascotaJugador = document.getElementById('mascota-jugador');
   let seccionMascota = document.getElementById('seleccionar-mascota');
 
+  seccionAtaque.style.display = 'flex';
+  seccionVerMapa.style.display = 'flex';
   seccionMascota.style.display = 'none';
   mokepones.forEach((mokepon) => {
     botonesMokepones.push(document.getElementById(mokepon.nombre))
@@ -101,7 +112,6 @@ function seleccionarMascotaJugador() {
     if (boton.checked) {
       spanMascotaJugador.innerHTML = boton.id[0].toUpperCase() + boton.id.substring(1);
       mascotaJugador = boton.id;
-      seccionAtaque.style.display = 'flex';
       mokeponSeleccionado = true;
     }
   })
@@ -114,11 +124,31 @@ function seleccionarMascotaJugador() {
   seleccionarMascotaEnemigo();
 }
 
+function dibujarMokepon(mokepon){
+  lienzo.clearRect(0,0,mapa.width, mapa.height);
+  lienzo.drawImage(
+    mokepon.imagenMokepon,
+    mokepon.x,
+    mokepon.y,
+    mokepon.ancho,
+    mokepon.alto);
+}
+
+function moverMokepon(){
+  mokepones.forEach((mokepon) => {
+    if (mokepon.nombre === mascotaJugador){
+      mokepon.x = mokepon.x + 5;
+      dibujarMokepon(mokepon);
+    }
+  })
+}
+
 function extraerAtaques(mascota) {
   let ataques;
   mokepones.forEach((mokepon) => {
-    if (mokepon.nombre === mascota)
+    if (mokepon.nombre === mascota){
       ataques = mokepon.ataques
+    }   
   })
   return ataques
 }
@@ -247,6 +277,7 @@ function iniciarJuego() {
     contenedorTarjetas.innerHTML += opcionMokepones
   })
   seccionAtaque.style.display = 'none';
+  seccionVerMapa.style.display = 'none';
   botonReiniciar.hidden = true;
   botonMascotaJugador.addEventListener('click', seleccionarMascotaJugador);
   botonReiniciar.addEventListener('click', reiniciarJuego);

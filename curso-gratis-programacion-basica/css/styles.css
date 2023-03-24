@@ -8,7 +8,7 @@ body {
     font-size: 80px;
     font-family: 'Rubik Bubbles', cursive;
     color: #29b6f6;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     margin-top: 20px;
 }
 
@@ -94,6 +94,16 @@ input:checked + label{
     width: 350px;
     margin-top: 20px;
     column-gap: 50px;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa{
+    border: 2px solid black;
 }
 
 @media(max-width: 360px) {
