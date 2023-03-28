@@ -15,7 +15,6 @@ let resultado;
 let opcionMokepones;
 let opcionesAtaqueEnemigo;
 let lienzo = mapa.getContext("2d")
-
 let mokepones = [];
 
 class Mokepon {
@@ -28,8 +27,10 @@ class Mokepon {
     this.y = 30;
     this.ancho = 80;
     this.alto = 80;
-    this.imagenMokepon = new Image()
-    this.imagenMokepon.src = imagen
+    this.imagenMokepon = new Image();
+    this.imagenMokepon.src = imagen;
+    this.velocidadX = 0;
+    this.velocidadY = 0;
   }
 }
 
@@ -120,25 +121,48 @@ function seleccionarMascotaJugador() {
     alert('No seleccionaste ninguna mascota');
     reiniciarJuego();
   }
+  intervalo = setInterval(dibujarMokepon, 50)
   mostrarataques(extraerAtaques(mascotaJugador))
   seleccionarMascotaEnemigo();
 }
 
-function dibujarMokepon(mokepon){
-  lienzo.clearRect(0,0,mapa.width, mapa.height);
-  lienzo.drawImage(
-    mokepon.imagenMokepon,
-    mokepon.x,
-    mokepon.y,
-    mokepon.ancho,
-    mokepon.alto);
+function dibujarMokepon() {
+  mokepones.forEach((mokepon) => {
+    if (mokepon.nombre === mascotaJugador) {
+      mokepon.x = mokepon.x + mokepon.velocidadX;
+      mokepon.y = mokepon.y + mokepon.velocidadY;
+      lienzo.clearRect(0, 0, mapa.width, mapa.height);
+      lienzo.drawImage(
+        mokepon.imagenMokepon,
+        mokepon.x,
+        mokepon.y,
+        mokepon.ancho,
+        mokepon.alto);
+    }
+  })
 }
 
-function moverMokepon(){
+function moverMokepon(direccion) {
   mokepones.forEach((mokepon) => {
-    if (mokepon.nombre === mascotaJugador){
-      mokepon.x = mokepon.x + 5;
-      dibujarMokepon(mokepon);
+    if (mokepon.nombre === mascotaJugador) {
+      if (direccion === 'derecha') {
+        mokepon.velocidadX = 5;
+      } else if (direccion === 'izquierda') {
+        mokepon.velocidadX = - 5;
+      } else if (direccion === 'arriba') {
+        mokepon.velocidadY = - 5;
+      } else if (direccion === 'abajo') {
+        mokepon.velocidadY = 5;
+      }
+    }
+  })
+}
+
+function detenerMovimiento() {
+  mokepones.forEach((mokepon) => {
+    if (mokepon.nombre === mascotaJugador) {
+      mokepon.velocidadX = 0;
+      mokepon.velocidadY = 0;
     }
   })
 }
@@ -146,9 +170,9 @@ function moverMokepon(){
 function extraerAtaques(mascota) {
   let ataques;
   mokepones.forEach((mokepon) => {
-    if (mokepon.nombre === mascota){
+    if (mokepon.nombre === mascota) {
       ataques = mokepon.ataques
-    }   
+    }
   })
   return ataques
 }
