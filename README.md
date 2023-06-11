@@ -9,9 +9,10 @@
 - [x] Nuevo Curso Gratis de Programación Básica
 - [ ] Curso de Introducción a la Web: Historia y Funcionamiento de Internet
 - [ ] Fundamentos de Ingeniería de Software
-- [ ] Curso de Prework: Configuración de Entorno de Desarrollo en Windows
-- [ ] Curso de Prework: Configuración de Entorno de Desarrollo en Linux
-- [ ] Curso de Prework: Configuración de Entorno de Desarrollo en macOS
+- [ ] Curso de Prework
+    - [ ] Curso de Prework: Configuración de Entorno de Desarrollo en Windows
+    - [ ] Curso de Prework: Configuración de Entorno de Desarrollo en Linux
+    - [ ] Curso de Prework: Configuración de Entorno de Desarrollo en macOS
 - [ ] Curso de Introducción a la Terminal y Línea de Comandos
 - [ ] Curso Profesional de Git y GitHub
 - [ ] Curso de Flujo de Desarrollo Moderno CodeStream
@@ -46,8 +47,9 @@
 - [ ] Curso de NPM: Gestión de Paquetes y Dependencias en JavaScript
 - [ ] Curso Profesional de JavaScript
 - [ ] Curso de Fundamentos de TypeScript
-- [ ] Curso de TypeScript: Tipos Avanzados y Funciones
-- [ ] Curso de TypeScript: Programación Orientada a Objetos y Asincronismo
+- [ ] Curso de TypeScript
+    - [ ] Curso de TypeScript: Tipos Avanzados y Funciones
+    - [ ] Curso de TypeScript: Programación Orientada a Objetos y Asincronismo
 - [ ] Curso de Introducción a Empaquetadores Web
 - [ ] Curso de Webpack
 - [ ] Curso de Vite.js
@@ -69,9 +71,10 @@
 - [ ] Curso Avanzado de Automatización de Pruebas con Puppeteer
 - [ ] Curso de Frameworks y Librerías de JavaScript
 - [ ] Curso de Introducción a React.js
-- [ ] Curso de React.js: Patrones de Render y Composición
-- [ ] Curso de React.js: Manejo Profesional del Estado
-- [ ] Curso de React.js: Navegación con React Router
+- [ ] Curso de React.js
+    - [ ] Curso de React.js: Patrones de Render y Composición
+    - [ ] Curso de React.js: Manejo Profesional del Estado
+    - [ ] Curso de React.js: Navegación con React Router
 - [ ] Curso Práctico de React.js
 - [ ] Curso Profesional de React Hooks
 - [ ] Curso Profesional de React.js y Redux
@@ -85,19 +88,21 @@
 - [ ] Curso de Angular: Componentes y Servicios
 - [ ] Curso de Consumo de APIs REST con Angular
 - [ ] Curso de Angular Router: Lazy Loading y Programación Modular
-- [ ] Curso de Angular: Unit Testing para Servicios
-- [ ] Curso de Angular: Unit Testing para Componentes
-- [ ] Curso de Angular: Unit Testing para Formularios
-- [ ] Curso de Angular: Unit Testing para Rutas
+- [ ] Curso de Angular:
+    - [ ] Curso de Angular: Unit Testing para Servicios
+    - [ ] Curso de Angular: Unit Testing para Componentes
+    - [ ] Curso de Angular: Unit Testing para Formularios
+    - [ ] Curso de Angular: Unit Testing para Rutas
 - [ ] Curso de Rendimiento en Angular
 - [ ] Curso de Angular Forms: Creación y Optimización de Formularios Web
 - [ ] Curso de Progressive Web Apps con Angular 8
-- [ ] Curso de Vue.js: Introducción y Fundamentos
-- [ ] Curso de Vue.js: Componentes y Composition API
+- [ ] Curso de Vue.js
+    - [ ] Curso de Vue.js: Introducción y Fundamentos
+    - [ ] Curso de Vue.js: Componentes y Composition API
+    - [ ] Curso de Vue.js: Navegación con Vue Router
+    - [ ] Curso de Vue.js: Manejo del Estado con Vuex
+    - [ ] Curso de Vue.js: Manejo del Estado con Pinia
 - [ ] Curso Práctico de Vue.js
-- [ ] Curso de Vue.js: Navegación con Vue Router
-- [ ] Curso de Vue.js: Manejo del Estado con Vuex
-- [ ] Curso de Vue.js: Manejo del Estado con Pinia
 - [ ] Curso de Reactividad con Vue.js 3
 - [ ] Curso de Unit Testing en Vue.js 3
 - [ ] Curso Profesional de Vue.js 2
@@ -113,11 +118,13 @@
 - [ ] Curso Práctico de SQL
 - [ ] Curso Básico de MongoDB
 - [ ] Curso de Fundamentos de Node.js
-- [ ] Curso de Backend con Node.js: API REST con Express.js
-- [ ] Curso de Backend con Node.js: Base de Datos con PostgreSQL
-- [ ] Curso de Backend con Node.js: Autenticación con Passport.js y JWT
-- [ ] Curso de Node.js: Base de Datos con MongoDB y WebSockets
-- [ ] Curso de Node.js: Autenticación, Microservicios y Redis
+- [ ] Curso de Backend con Node.js:
+    - [ ] Curso de Backend con Node.js: API REST con Express.js
+    - [ ] Curso de Backend con Node.js: Base de Datos con PostgreSQL
+    - [ ] Curso de Backend con Node.js: Autenticación con Passport.js y JWT
+- [ ] Curso de Node.js:
+    - [ ] Curso de Node.js: Base de Datos con MongoDB y WebSockets
+    - [ ] Curso de Node.js: Autenticación, Microservicios y Redis
 - [ ] Curso de Aplicaciones en Tiempo Real con Socket.io
 - [ ] Curso Práctico de Webpack
 - [ ] Curso de Node.js para IoT: Pub/Sub con MQTT, Testing y WebSockets
@@ -127,18 +134,20 @@
 - [ ] Fundamentos de Arquitectura de Software
 - [ ] Curso Profesional de Arquitectura de Software
 - [ ] Curso de Backend con NestJS
-- [ ] Curso de NestJS: Programación Modular, Documentación con Swagger y Deploy
-- [ ] Curso de NestJS: Persistencia de Datos con MongoDB
-- [ ] Curso de NestJS: Persistencia de Datos con TypeORM
-- [ ] Curso de NestJS: Autenticación con Passport y JWT
+- [ ] Curso de NestJS:
+    - [ ] Curso de NestJS: Programación Modular, Documentación con Swagger y Deploy
+    - [ ] Curso de NestJS: Persistencia de Datos con MongoDB
+    - [ ] Curso de NestJS: Persistencia de Datos con TypeORM
+    - [ ] Curso de NestJS: Autenticación con Passport y JWT
 - [ ] Curso de Next.js
 - [ ] Curso Práctico de Next.js
 - [ ] Curso Profesional de Next.js
 - [ ] Curso de Next.js con GraphQL
-- [ ] Curso de Next.js: Sitios Estáticos y Jamstack
-- [ ] Curso de Next.js: Optimización y Deploy a Producción
-- [ ] Curso de Next.js: Internacionalización de Aplicaciones Web con i18n
-- [ ] Curso de Next.js: Optimización y Manejo de Grandes Datasets
-- [ ] Curso de Next.js: Autenticación
-- [ ] Curso de Next.js: Seguridad Web con OWASP
+- [ ] Curso de Next.js:
+    - [ ] Curso de Next.js: Sitios Estáticos y Jamstack
+    - [ ] Curso de Next.js: Optimización y Deploy a Producción
+    - [ ] Curso de Next.js: Internacionalización de Aplicaciones Web con i18n
+    - [ ] Curso de Next.js: Optimización y Manejo de Grandes Datasets
+    - [ ] Curso de Next.js: Autenticación
+    - [ ] Curso de Next.js: Seguridad Web con OWASP
 - [ ] Curso de Desarrollo de Aplicaciones Web con Gatsby JS
