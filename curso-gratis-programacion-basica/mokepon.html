@@ -18,40 +18,45 @@
         <button id="boton-mascota">Seleccionar</button>
     </section>
 
-    <section id="ver-mapa">
+    <section id="titulo-interaccion">
         <h1 id="titulo">Recorre el mapa con tu mokepon</h1>
-        <canvas id="mapa">
-        </canvas>
-        <button onmouseup="detenerMovimiento()" onmousedown="moverMokepon('arriba')">⬆️</button>
-        <button onmouseup="detenerMovimiento()" onmousedown="moverMokepon('abajo')">⬇️</button>
-        <button onmouseup="detenerMovimiento()" onmousedown="moverMokepon('izquierda')">⬅️</button>
-        <button onmouseup="detenerMovimiento()" onmousedown="moverMokepon('derecha')">➡️</button>
+    </section>
+    <section id = "interaccion-mascota">
+        <div id="ver-mapa">
+            <canvas id="mapa">
+            </canvas>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverMokepon('arriba')">⬆️</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverMokepon('abajo')">⬇️</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverMokepon('izquierda')">⬅️</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverMokepon('derecha')">➡️</button>
+        </div>
+    
+        <div id="seleccionar-ataque">
+            <div id="mensajes">
+                <p id="mensaje-resultado">Inicia el juego</p>
+                <section id="reiniciar">
+                    <button id="boton-reiniciar" class="botones">Reiniciar</button>
+                </section>
+            </div>
+            <div class="info-combate">
+                <div class="info-mascota">
+                    <h3 id="vidas-jugador">3</h3>
+                    <span id="mascota-jugador"></span>
+                    <div id="ataque-jugador"></div>
+                </div>
+                <div class="info-mascota">
+                    <h3 id="vidas-enemigo">3</h3>
+                    <span id="mascota-enemigo"></span>
+                    <div id="ataque-enemigo"></div>
+                </div>
+            </div>
+            <h2>Elige tu ataque:</h2>
+            <div id="lista-ataques">
+            </div>
+        </div>
     </section>
 
-    <section id="seleccionar-ataque">
-        <h1 id="titulo">!MOKEPON!</h1>
-        <div id="mensajes">
-            <p id="mensaje-resultado">Inicia el juego</p>
-            <section id="reiniciar">
-                <button id="boton-reiniciar" class="botones">Reiniciar</button>
-            </section>
-        </div>
-        <div class="info-combate">
-            <div class="info-mascota">
-                <h3 id="vidas-jugador">3</h3>
-                <span id="mascota-jugador"></span>
-                <div id="ataque-jugador"></div>
-            </div>
-            <div class="info-mascota">
-                <h3 id="vidas-enemigo">3</h3>
-                <span id="mascota-enemigo"></span>
-                <div id="ataque-enemigo"></div>
-            </div>
-        </div>
-        <h2>Elige tu ataque:</h2>
-        <div id="lista-ataques">
-        </div>
-    </section>
+    
     <script src="./js/mokepon.js"></script>
 </body>
 
