@@ -2,10 +2,11 @@
 ### Ruta: Frontend y Backend con Javascript para Desarrollo Web
 
 - [x] Curso de Computación Básica
-- [x] Curso de Pensamiento Lógico: Algoritmos y Diagramas de Flujo
-- [x] Curso de Pensamiento Lógico: Manejo de Datos, Estructuras y Funciones
-- [x] Curso de Pensamiento Lógico: Lenguajes de Programación
-- [ ] Nuevo Curso Gratis de Programación Básica
+- [x] Curso de Pensamiento Lógico
+    - [x] Curso de Pensamiento Lógico: Algoritmos y Diagramas de Flujo
+    - [x] Curso de Pensamiento Lógico: Manejo de Datos, Estructuras y Funciones
+    - [x] Curso de Pensamiento Lógico: Lenguajes de Programación
+- [x] Nuevo Curso Gratis de Programación Básica
 - [ ] Curso de Introducción a la Web: Historia y Funcionamiento de Internet
 - [ ] Fundamentos de Ingeniería de Software
 - [ ] Curso de Prework: Configuración de Entorno de Desarrollo en Windows
