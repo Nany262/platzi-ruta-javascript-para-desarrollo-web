@@ -59,6 +59,8 @@ input:checked + label{
 #seleccionar-ataque {
     flex-direction: column;
     align-items: center;
+    height: 740px;
+    width: 500px;
 }
 
 .botones {
@@ -68,6 +70,12 @@ input:checked + label{
     background: transparent;
     border: 2px solid black;
     font-family: 'Rubik Bubbles', cursive;
+}
+
+.botones-ataque{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
 }
 
 #mensajes {
@@ -95,8 +103,6 @@ input:checked + label{
     text-align: center;
     width: 350px;
     margin-top: 20px;
-    margin-left: 25%;
-    column-gap: 50px;
 }
 
 #interaccion-mascota{
@@ -104,7 +110,7 @@ input:checked + label{
     grid-template-columns: 50% 50%;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #ver-mapa{
