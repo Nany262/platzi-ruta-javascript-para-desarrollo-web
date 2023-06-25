@@ -18,6 +18,7 @@ let opcionMokepones
 let opcionesAtaqueEnemigo
 let lienzo = mapa.getContext("2d")
 let mokepones = []
+let mokeponesEnemigos = []
 let colision = false
 let jugadorId = null
 
@@ -163,6 +164,9 @@ function dibujarCanvas() {
   )
   mascotaJugador.dibujarMokepon()
   enviarPosicion(mascotaJugador)
+  mokeponesEnemigos.forEach(function (mokepon){
+    mokepon.dibujarMokepon()
+  })
 
   if (mascotaJugador.velocidadX != 0 || mascotaJugador.velocidadY != 0) {
     revisarColision(hipodogeEnemigo)
@@ -412,7 +416,7 @@ function enviarPosicion(mascotaJugador) {
   ).then(function (res) {
     if (res.ok) {
       res.json().then(function ({ enemigos }) { //Extrae la respuesta 
-        enemigos.forEach(function (enemigo) {
+        mokeponesEnemigos = enemigos.map(function (enemigo) {
           let mokeponEnemigo = null
           const mokeponEnemigoNombre = enemigo.mokepon.nombre || ""
           switch (mokeponEnemigoNombre) {
@@ -426,7 +430,7 @@ function enviarPosicion(mascotaJugador) {
               mokeponEnemigo = new Mokepon('ratigueya', './assets/mokepons_mokepon_ratigueya_attack.webp', 3)
               break;
             case 'langostelvis':
-              mokeponEnemigo =new Mokepon('langostelvis', './assets/mokepons_mokepon_langostelvis_attack.png', 3)
+              mokeponEnemigo = new Mokepon('langostelvis', './assets/mokepons_mokepon_langostelvis_attack.png', 3)
               break;
             case 'pydos':
               mokeponEnemigo = new Mokepon('pydos', './assets/mokepons_mokepon_pydos_attack.png', 3)
@@ -435,10 +439,10 @@ function enviarPosicion(mascotaJugador) {
               mokeponEnemigo = new Mokepon('tucapalma', './assets/mokepons_mokepon_tucapalma_attack.png', 3)
               break;
           }
-        
+
           mokeponEnemigo.x = enemigo.x
           mokeponEnemigo.y = enemigo.y
-          mokeponEnemigo.dibujarMokepon()
+          return mokeponEnemigo
         })
       })
     }
