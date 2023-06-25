@@ -22,15 +22,15 @@ let colision = false
 let jugadorId = null
 
 class Mokepon {
-  constructor(nombre, imagen, vida, x = 492, y = 434) {
+  constructor(nombre, imagen, vida, id = null) {
     this.nombre = nombre
     this.imagen = imagen
     this.vida = vida
     this.ataques = []
     this.ancho = 120
     this.alto = 120
-    this.x = x
-    this.y = y
+    this.x = aleatorio(0, mapa.width - this.ancho)
+    this.y = aleatorio(0, mapa.width - this.alto)
     this.imagenMokepon = new Image()
     this.imagenMokepon.src = imagen
     this.velocidadX = 0
@@ -56,7 +56,7 @@ let pydos = new Mokepon('pydos', './assets/mokepons_mokepon_pydos_attack.png', 3
 let tucapalma = new Mokepon('tucapalma', './assets/mokepons_mokepon_tucapalma_attack.png', 3)
 
 hipodoge.ataques.push(
-  //objetos literarios
+  //Objetos literales - Objetos que declaran sus propiedades de manera explícita
   { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-1' },
   { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-2' },
   { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-3' },
@@ -81,7 +81,6 @@ ratigueya.ataques.push(
 )
 
 langostelvis.ataques.push(
-  //objetos literarios
   { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-1' },
   { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-2' },
   { nombre: 'FUEGO', emoji: '🔥', idBoton: 'boton-fuego-1' },
@@ -90,7 +89,6 @@ langostelvis.ataques.push(
 )
 
 pydos.ataques.push(
-  //objetos literarios
   { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-1' },
   { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-2' },
   { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-3' },
@@ -98,75 +96,18 @@ pydos.ataques.push(
   { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra-2' },
 )
 
-tucapalma.ataques.push(
-  //objetos literarios
+// Otras formas de asignar la lista al push*--------------
+
+const TucapalmaAtaques = [
   { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-1' },
   { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-2' },
   { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra-1' },
   { nombre: 'FUEGO', emoji: '🔥', idBoton: 'boton-fuego' },
   { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra-1' },
-)
+]
 
-let hipodogeEnemigo = new Mokepon('hipodoge', './assets/mokepons_mokepon_hipodoge_attack.webp', 3, aleatorio(0, 607), aleatorio(0, 520))
-let capipepoEnemigo = new Mokepon('capipepo', './assets/mokepons_mokepon_capipepo_attack.webp', 3, aleatorio(0, 607), aleatorio(0, 520))
-let ratigueyaEnemigo = new Mokepon('ratigueya', './assets/mokepons_mokepon_ratigueya_attack.webp', 3, aleatorio(0, 607), aleatorio(0, 520))
-let langostelvisEnemigo = new Mokepon('langostelvis', './assets/mokepons_mokepon_langostelvis_attack.png', 3, aleatorio(0, 607), aleatorio(0, 520))
-let pydosEnemigo = new Mokepon('pydos', './assets/mokepons_mokepon_pydos_attack.png', 3, aleatorio(0, 607), aleatorio(0, 520))
-let tucapalmaEnemigo = new Mokepon('tucapalma', './assets/mokepons_mokepon_tucapalma_attack.png', 3, aleatorio(0, 607), aleatorio(0, 520))
-
-hipodogeEnemigo.ataques.push(
-  //objetos literarios
-  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-1' },
-  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-2' },
-  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-3' },
-  { nombre: 'FUEGO', emoji: '🔥', idBoton: 'boton-fuego' },
-  { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra' },
-)
-
-capipepoEnemigo.ataques.push(
-  { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra-1' },
-  { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra-2' },
-  { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra-3' },
-  { nombre: 'FUEGO', emoji: '🔥', idBoton: 'boton-fuego' },
-  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua' },
-)
-
-ratigueyaEnemigo.ataques.push(
-  { nombre: 'FUEGO', emoji: '🔥', idBoton: 'boton-fuego-1' },
-  { nombre: 'FUEGO', emoji: '🔥', idBoton: 'boton-fuego-2' },
-  { nombre: 'FUEGO', emoji: '🔥', idBoton: 'boton-fuego-3' },
-  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua' },
-  { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra' },
-)
-
-langostelvisEnemigo.ataques.push(
-  //objetos literarios
-  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-1' },
-  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-2' },
-  { nombre: 'FUEGO', emoji: '🔥', idBoton: 'boton-fuego-1' },
-  { nombre: 'FUEGO', emoji: '🔥', idBoton: 'boton-fuego-2' },
-  { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra' },
-)
-
-pydosEnemigo.ataques.push(
-  //objetos literarios
-  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-1' },
-  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-2' },
-  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-3' },
-  { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra-1' },
-  { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra-2' },
-)
-
-tucapalmaEnemigo.ataques.push(
-  //objetos literarios
-  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-1' },
-  { nombre: 'AGUA', emoji: '💧', idBoton: 'boton-agua-2' },
-  { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra-1' },
-  { nombre: 'FUEGO', emoji: '🔥', idBoton: 'boton-fuego' },
-  { nombre: 'TIERRA', emoji: '🌱', idBoton: 'boton-tierra-1' },
-)
-
-
+tucapalma.ataques.push(...TucapalmaAtaques) // Los 3 puntos envian los valores y no la lista
+//----------------------------------------------------------- 
 mokepones.push(hipodoge, capipepo, ratigueya, tucapalma, pydos, langostelvis)
 
 function seleccionarMascotaJugador() {
@@ -221,12 +162,7 @@ function dibujarCanvas() {
     mapa.height
   )
   mascotaJugador.dibujarMokepon()
-  hipodogeEnemigo.dibujarMokepon()
-  capipepoEnemigo.dibujarMokepon()
-  ratigueyaEnemigo.dibujarMokepon()
-  langostelvisEnemigo.dibujarMokepon()
-  pydosEnemigo.dibujarMokepon()
-  tucapalmaEnemigo.dibujarMokepon()
+  enviarPosicion(mascotaJugador)
 
   if (mascotaJugador.velocidadX != 0 || mascotaJugador.velocidadY != 0) {
     revisarColision(hipodogeEnemigo)
@@ -458,10 +394,52 @@ function seleccionarMokepon(mascotaJugador) {
       },
       body: JSON.stringify({ mokepon: mascotaJugador.nombre })
     }
+  )
+}
+
+function enviarPosicion(mascotaJugador) {
+  fetch(`http://localhost:8080/mokepon/${jugadorId}/posicion`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        x: mascotaJugador.x,
+        y: mascotaJugador.y
+      })
+    }
   ).then(function (res) {
     if (res.ok) {
-      res.text().then(function (respuesta) {
-        console.log(respuesta)
+      res.json().then(function ({ enemigos }) { //Extrae la respuesta 
+        enemigos.forEach(function (enemigo) {
+          let mokeponEnemigo = null
+          const mokeponEnemigoNombre = enemigo.mokepon.nombre || ""
+          switch (mokeponEnemigoNombre) {
+            case 'hipodoge':
+              mokeponEnemigo = new Mokepon('hipodoge', './assets/mokepons_mokepon_hipodoge_attack.webp', 3)
+              break;
+            case 'capipepo':
+              mokeponEnemigo = new Mokepon('capipepo', './assets/mokepons_mokepon_capipepo_attack.webp', 3)
+              break;
+            case 'ratigueya':
+              mokeponEnemigo = new Mokepon('ratigueya', './assets/mokepons_mokepon_ratigueya_attack.webp', 3)
+              break;
+            case 'langostelvis':
+              mokeponEnemigo =new Mokepon('langostelvis', './assets/mokepons_mokepon_langostelvis_attack.png', 3)
+              break;
+            case 'pydos':
+              mokeponEnemigo = new Mokepon('pydos', './assets/mokepons_mokepon_pydos_attack.png', 3)
+              break;
+            case 'tucapalma':
+              mokeponEnemigo = new Mokepon('tucapalma', './assets/mokepons_mokepon_tucapalma_attack.png', 3)
+              break;
+          }
+        
+          mokeponEnemigo.x = enemigo.x
+          mokeponEnemigo.y = enemigo.y
+          mokeponEnemigo.dibujarMokepon()
+        })
       })
     }
   })
