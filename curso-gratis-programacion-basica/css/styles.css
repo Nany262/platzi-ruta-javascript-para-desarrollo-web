@@ -127,6 +127,7 @@ input:checked + label{
     align-items: center;
     align-content: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 @media(max-width: 360px) {

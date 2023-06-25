@@ -19,6 +19,7 @@ let opcionesAtaqueEnemigo
 let lienzo = mapa.getContext("2d")
 let mokepones = []
 let colision = false
+let jugadorId = null
 
 class Mokepon {
   constructor(nombre, imagen, vida, x = 492, y = 434) {
@@ -199,6 +200,7 @@ function seleccionarMascotaJugador() {
     reiniciarJuego()
   }
 
+  seleccionarMokepon(mascotaJugador)
   iniciarMapa()
   mostrarataques(mascotaJugador.ataques)
 }
@@ -399,16 +401,6 @@ function iniciarJuego() {
   unirseAlJuego()
 }
 
-function unirseAlJuego() {
-  fetch("http://localhost:8080/unirse").then(function (res) {
-    if (res.ok) {
-      res.text().then(function (respuesta) {
-        console.log(respuesta)
-      })
-    }
-  })
-}
-
 function iniciarMapa() {
   intervalo = setInterval(dibujarCanvas, 50)
   window.addEventListener('keydown', iniciarMovimiento)
@@ -446,8 +438,31 @@ function revisarColision(enemigo) {
 
 window.addEventListener('load', iniciarJuego)
 
-/* Hipodoge -> Agua
-Capipepo -> Tierra
-Ratigueya -> Fuego
-Langostelvis -> Agua y Fuego
-Tucapalma -> Agua y Tierra*/
+function unirseAlJuego() {
+  fetch(`http://localhost:8080/unirse`).then(function (res) {
+    if (res.ok) {
+      res.text().then(function (respuesta) {
+        console.log(respuesta)
+        jugadorId = respuesta
+      })
+    }
+  })
+}
+
+function seleccionarMokepon(mascotaJugador) {
+  fetch(`http://localhost:8080/mokepon/${jugadorId}`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ mokepon: mascotaJugador.nombre })
+    }
+  ).then(function (res) {
+    if (res.ok) {
+      res.text().then(function (respuesta) {
+        console.log(respuesta)
+      })
+    }
+  })
+}
